@@ -86,4 +86,7 @@ header {
 #todos-list .todo .bi-trash3 {
   color: rgb(255, 0, 0);
   margin: 0;
+}
+.todo {
+  border-bottom: 0.5px solid rgb(192, 192, 192);
 } 
