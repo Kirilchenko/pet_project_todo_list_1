@@ -6,7 +6,6 @@ let todoInput = document.querySelector('#newtodo');
 let todosListElement = document.querySelector('#todos-list');
 showNewTask();
 
-
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     saveToDo(); // Сохранение задачи
@@ -65,6 +64,7 @@ todosListElement.addEventListener('click', function(event){
         let todo = parentElement; // Элемент запустивший событие
         let todoObjId = Number(todo.id); // Его id
         let action = target.dataset.action; // Читаем кастомный атрибут action
+        // Запуск действия
         if(action === 'check'){checkToDo(todoObjId);}
         if(action === 'edit'){editToDo(todoObjId);}
         if(action === 'delete'){deleteToDo(todoObjId);}
